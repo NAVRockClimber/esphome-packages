@@ -30,14 +30,14 @@ esphome:
   name: "${name}"
   name_add_mac_suffix: true
   project:
-    name: smarthomeyourself.barcodescanner
+    name: barcodescanner
     version: "1.0"
   on_boot:
     then:
       - lambda: id(last_ean).publish_state("Scan Barcode");
 
 dashboard_import:
-  package_import_url: github://NAVRockClimber/esphome/packages/barcode.yaml@main
+  package_import_url: github://NAVRockClimber/esphome-packages/barcode.yaml@main
   import_full_config: false
 
 ota:
