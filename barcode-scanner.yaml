@@ -30,7 +30,7 @@ esphome:
   name: "${name}"
   name_add_mac_suffix: true
   project:
-    name: barcodescanner
+    name: NAVRockClimber.barcodescanner
     version: "1.0"
   on_boot:
     then:
